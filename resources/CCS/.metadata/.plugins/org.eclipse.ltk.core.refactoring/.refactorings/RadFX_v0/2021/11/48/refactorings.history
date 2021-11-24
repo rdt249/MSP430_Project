@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RadFX_v0/memex_code_for_reference.c&apos; to &apos;memex_code_for_reference&apos;" description="Rename resource &apos;memex_code_for_reference.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="memex_code_for_reference.c" name="memex_code_for_reference" stamp="1637790303809" updateReferences="true"/>
+</session>

@@ -1,0 +1,32 @@
+
+**** Build of configuration Debug for project RadFX_v1 ****
+
+/Applications/ti/ccs1040/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1040/ccs/ccs_base/msp430/include" --include_path="/Users/stephen/Desktop/MSP430_Project/resources/CCS/RadFX_v1" --include_path="/Applications/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 36: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 123: remark #1528-D: (ULP 3.1) Detected flag polling using UCA0IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 146: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 147: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 152: remark #2553-D: (ULP 14.1) Array index (involving "reverse") of type "long". Recommend using "unsigned long"
+"../main.c", line 152: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 153: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 180: remark #1527-D: (ULP 2.1) Detected SW delay loop using __no_operation. Recommend using a timer module instead
+"../main.c", line 19: remark #1534-D: (ULP 7.1) Detected use of global variable "token" within one function "USCI_A0_ISR". Recommend placing variable in the function locally
+Finished building: "../main.c"
+ 
+Building target: "RadFX_v1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"RadFX_v1.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"/Applications/ti/ccs1040/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1040/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1040/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/lib" -i"/Applications/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="RadFX_v1_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "RadFX_v1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "RadFX_v1.out"
+ 
+
+**** Build Finished ****
